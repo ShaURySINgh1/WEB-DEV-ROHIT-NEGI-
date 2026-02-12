@@ -119,6 +119,191 @@ WHY CLASSES ARE MADE UP?
 
 EVERY NETWORK PROVIDER IP ADDRESS IS DIFFERENTS OUR ROUTER & SIM IP ARE DIFFERENT.
 
+IPV4: 32-bit } STANDARD 
+
+MACHINE -> connects to wifi or internet and data request/send goes to routers/nodes some data transfer to the (optical fiber)wire which supports Analog System, Digital Signals[ 0/1 ] if two systems want to talk each other they want to each other they must have each other address [so my system needs a reader or the system to tell that system how much amount of my address are need to give the exact IP ADDRESS so it reader reads the address then give the IP ADDRESS accordingly.
+
+ so it converts this address into the packets so everyone has [2 to the power of 32 bits] of ADDRESS and split it into the chunks.
+
+in 90`s century we make the 32bit of IP ADDRESS then why don't we made the 64bits of IP ADDRESS [binary code] instead we made up 128bits of IP ADDRESS because we had knew that 64bits won't be enough for the future
+
+
+
+OUR RAM & MEMORY have bits of 1,2,4,8,16,32,64,128,256,512,1040,2040 and so on. because it those components are built up from the binary systems so they store the data or render it like that
+
+now WE HAVE IPV6=> [2¹²⁸ or 2^128 bits] to it is enough for more than 200yrs.
+
+
+IPV6: IS BEEN READED IN HEXADECIMAL SYSTEM [BASE OF 16 = 16 CHARACTERS] 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F.
+
+
+       [0000:0000:0000:0000:0000:0000:0000:0000] => HEXADECIMAL DECIMAL IP ADDRESS 
+                          TO
+       [FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF]  
+       ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+BITS=> 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+
+       EACH CHARACTER HAVE 4BITS IN HEXADECIMAL [PROOF]: 1111 HEXADECIMAL REQUIRES MINIMUM [1111] BINARY OF 4BITS (2^16 TOTALS 0 & 1 CAN BE WRITE IN EVERY PLACES OF HEXADECIMALS FOR ALL CHARACTERS IN ONE PLACE.]
+
+
+       EACH CHARACTER HAVE 3BITS IN OCTAHEDRAL [PROOF]: 111 OCTAHEDRAL REQUIRES MAXIMUM [111] BINARY OF 3BITS
+
+        OCTADECIMAL IP SYSTEM [ 2⁸ bits TOTAL IP ADDRESS]
+
+          [000:000:000:000]
+                 TO 
+          [777:777:777:777]
+          ↓↓↓↓↓↓↓↓↓↓↓↓
+   BITS=> 3 3 3 3 3 3 3 3 3 3 3
+
+TOTAL POSSIBILITIES:
+
+CHARACTER:2⁸
+BINARY CODE 
+
+
+•SELECTION OF IP ADDRESS CLASS FOR IPV4 [2^32 BITS]
+
+CLASS A: EXAMPLE=> [0-127] BITS OF ADDRESSES [0-127. 0-127. 0-127. 0-127] {THEY GAVE 50% OF IP ADDRESS TO THIS.}
+CLASS B: 25%  [128-191._____._____._____]
+CLASS C:12.5% [192-223._____._____._____]
+CLASS D:6.25% [224-239._____._____._____]
+CLASS E:6.25% [240-255._____._____._____]
+
+
+
+•SELECTION OF IP ADDRESS CLASS FOR OCTADECIMAL 
+
+                     CLASS A: [000:000:000:000] {CLASS A OCTADECIMAL CHARACTER START ALWAYS FROM 0's till 7 for one place of decimal
+TOTAL POSSIBILITIES            ↓
+OCTADECIMAL CHARACTERS:        8
+
+BINARY CODE FOR 1PLACE:        2⁸
+
+SELECTION OF CLASSES IN IPV6 [128 BITS OF HEXADECIMAL CHARACTERS ( BASE OF 16 )]
+
+
+ LET CLASS A BITS IN BINARY SYSTEM: _ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _
+                                    ↓
+LET SUPPOSE CLASS A START FROM 0's: 0 [2⁷= 128 Bits i can allocate to the Class A FOR ANY OF 7 LEFTS PLACES ,i can put any character till which occupy only 128 bits in any place of 7 lefts decimal
+IN FIRST DECIMAL PLACE
+
+
+ LET CLASS B BITS IN BINARY SYSTEM: _ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _
+                                    ↓↓
+LET SUPPOSE CLASS B START FROM 1's: 1 0 [2⁶= 64 Bits i can give to any of  i can put any character till which occupy only 64 bits in any place of 6 lefts decimal
+IN FIRST DECIMAL PLACE & 0's 
+IN SECOND DECIMAL PLACE 
+          
+
+                            let class b -> 1 0 0 0 0 0 0 0 => 128 bits can acquire in the all 7 lefts place.
+                                 AND IF -> 1 0 1 1 1 1 1 1 => 191 bits [2⁷•1 + 2⁶•0 + 2⁵•1 + 2⁴•1 + 2³•1 + 2²•1 + 2¹•1+ 2⁰•1 = 191 BITS (1BIT = 2 (0 or 1)) ]
+
+
+LET CLASS C BITS IN BINARY SYSTEM: _ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _
+                                    ↓↓↓
+LET SUPPOSE CLASS C START FROM 1's: 1 1 0 [2⁵= 32 Bits i can allocate to the Class A FOR ANY OF 7 LEFTS PLACES,i can give to any of CHARACTERS OF HEXADECIMAL TO ANY 5 LEFT PLACES i can put any character till which occupy only 32bits in any place of 5 lefts decimal
+IN FIRST DECIMAL PLACE & 1's 
+IN SECOND DECIMAL PLACE &
+0's IN THIRD DECIMAL PLACE 
+OCCUPIED ALWAYS 
+
+LAST BITS OF CLASS C :           [ 1 1 0 1 1 1 1 1 = 221 BITS ( 2⁷+2⁶+0+2⁴+2³+2²+2¹+2⁰ )
+
+
+CLASSIFICATION OF CLASSES OF BITS
+
+  
+STARTING BITS MUST START FROM THIS TO CLASSIFY THEIR CLASS ACCORDINGLY 
+
+CLASS A: 0 _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _
+CLASS B: 1 0 _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _
+CLASS C: 1 1 0 _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _
+CLASS D: 1 1 1 0 _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _
+CLASS E: 1 1 1 1 _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _._ _ _ _ _ _ _ _
+
+
+
+WHY DID THE CLASSES ARE MADE UP FOR THE IP ADDRESS.
+
+WHENEVER I GET CONNECT TO THE INTERNET I GET THE IP ADDRESS.
+
+LET A COMPANY this company give the [IPV4 400CRORES+ ADDRESSES] IP ADDRESS TO EVERY ONE IN THE WORLD WHOEVER WILL COME INTO THE INTERNET AND REQUEST THEN ONLY ONE THIS COMPANY WILL GIVE THE IP ADDRESS.
+
+THIS COMPANY'S SYSTEM AND SERVER WILL GET FAIL AND CRASHED (I KNOW THERE ARE 2 TYPES OF IP ADDRESS STATIC & DYNAMIC & DYNAMIC IP ADDRESS USE MORE SO WHENEVER ALL GET CONNECT TO THE SERVER TASK LIKE THIS IT WILL EXPLODE.
+
+IF WE HAD THIS TYPE OF SYSTEM ,THE IP ADDRESS WILL DISTRIBUTE RANDOMLY & THEN INTERNET WILL GET SLOWED.
+
+   WHY WILL THE INTERNET WILL GET SLOWED?
+=> THERE IS ONE AUTHORITY [ IANA = INTERNATIONAL ASSIGNED NUMBER AUTHORITY ].
+
+IANA HAVE THE DUTY TO DISTRIBUTE THE IP ADDRESS TO OTHER'S 
+
+
+THEY DIVIDED IP ADDRESSES INTO THE 5 DIFFERENT COUNTRIES OR CONTINENTS[REGIONS] [ASIA-PACIFIC,NORTH-AMERICA,SOUTH-AMERICA,EUROPE,AFRICA,MIDDLE-EAST]
+
+THEY SELL THE ADDRESSES TO THE 5 DIFFERENT REGIONS TO DISTRIBUTE IN THEIR OWN REGIONS.
+
+SO THE [ASIA-PACIFIC] AUTHORITY GIVES/SELL THE IP ADDRESS TO DISTRIBUTE THE ISP[INTERNET SERVICE PROVIDER] SO THEY CAN PROVIDE IP ADDRESS TO THEIR COUNTRIES LIKE: AIRTEL,VODAFONE-IDEA,JIO & BSNL. TO DISTRIBUTE THE IP ADDRESS TO THE OTHER PEOPLE IN THE COUNTRY SO THE PEOPLE CAN ACTIVE ON THE INTERNET BY UNIQUELY IP ADDRESSESS.
+
+
+
+
+WHY DID WE DIVIDED THE IP ADDRESSES INTO THE CLASSES?
+
+LET AIRTEL,BSNL,JIO & VODAFONE-IDEA => WANTS 10-20CRORES OF IP ADDRESSES 
+AND SOME COUNTRIES WANT THE ONLY 10-20LAKHS OF IP ADDRESSES.
+
+
+SO WHENEVER WE DIVIDE THE IP ADDRESS WE DIVIDE THEM INTO THE MEANINGFULL WAY
+LET IF WE ASK THE ISP(JIO) FOR 1CRORE IP ADDRESS SO IT WILL DISTURBS OTHER & INTERNET WILL GO DOWN.
+
+
+
+LET SUPPOSE FROM THE [73.0.0.0 TO 73.255.255.255] of IP ADDRESS ARE GIVEN TO JIO (ISP).
+
+
+
+ IPV6 HEXADECIMAL(256BITS)    [   73.0.0.0  ]
+                                     ↓
+                              [   73.255.255.255 ] SO 2²⁴ OF IP ADDRESS GIVEN ( 1.67 CRORES OF IP ADDRESS HAS BEEN GIVEN )
+
+
+ISP WHO WANTS CRORES OF IP ADDRESS ARE VERY LOW.
+
+AND THERE ARE MANY COUNTRIES WHO WANTS ONLY  LAKHS OF IP ADDRESS SO THERE ARE ISP LIKE THIS.
+
+THE NUMBER OF ISP WHO WANTS CRORES OF IP ADDRESS FROM THE IANA THEY ARE TAKEN UNDER THE CLASS A.
+
+
+
+CLASS A: 0-127._._._
+
+CLASS A=> ARE DIVIDED INTO THE TWO PORTIONS ONE IS [NETWORK ID] & [HOST ID].
+
+2⁷=128 OF NETWORK [IDEA,JIO,AIRTEL etc] ARE THERE ID ARE TOTAL IN CLASS A
+
+NETWORK ID: 1st 8bit will tells you about the network ID.
+HOST ID: lasts 24 bits will tells you about the HOST ID. HOST ID CONTENTS HOSTS [2²⁴ => 1.67+ CRORES]
+
+32BITS IN TOTAL  we know class A IP ADDRESS will start from 0 in first place of digits
+
+
+
+
+
+LET SAY IANA SELL THE ALL OF THE IP ADDRESS WHO'S STARTING FROM THE 73 BUT IDEA SAYS THEY WANTS MORE IP ADDRESSES SO IANA WILL GIVE THE IDEA ALL 73,74,75,76,77 and so on of the 
+
+SO ONE NETWORK ID IN CLASS A: 0-128 HAVE 1.67+ crores of IP ADDRESS.
+
+
+
+
+
+
+
+
+
 
 
 
